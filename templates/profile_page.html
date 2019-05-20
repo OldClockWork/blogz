@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<h1>Posts</h1>
+<br>
+
+{% for post in blogs %}
+
+    <form>
+        <h2><a href="/focus_post?id={{post.id}}">{{post.title}}</a></h2>
+        <br>
+
+        <p>{{post.body}}</p>
+        <br>
+        <p>Posted by <a href="/profile_select?id={{post.owner_id}}">{{post.owner.name}}</a></p>
+        <hr>
+    </form>
+    <br>
+    <br>
+    {% endfor%}
+
+
+{% endblock %}

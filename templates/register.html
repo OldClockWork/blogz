@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+        {{error}}
+        <br>
+    <form action="regConfirm" method="POST">
+        <label>
+            Name 
+            <input type="text" name="user_name" value="">
+        </label>
+        <br>
+
+        <label>
+            Email
+            <input type="text" name="email" value="">
+        </label>
+        <br>
+
+        <label>
+            Password
+            <input type="password" name="password" value="">
+        </label>
+        <br>
+
+        <label>
+            Re-enter Password
+            <input type="password" name="re-password" value="">
+        </label>
+        <br>
+        <input type="submit" value="Register">
+    </form>
+{% endblock %}

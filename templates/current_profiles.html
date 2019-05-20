@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Users</h1>
+<br>
+<br>
+
+{% for profile in profiles %}
+<ul>
+    <li><a href="/profile_select?id={{profile.id}}">{{profile.name}}</a></li>
+</ul>
+{% endfor %}
+
+{% endblock %}
