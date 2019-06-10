@@ -2,23 +2,28 @@
 
 
 {% block content %}
-<h1>Posts</h1>
+<h1 id="post_title">Posts</h1>
 <br>
 
-{% for post in blogs %}
-
+{% for post in blogs%}
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
     <form>
-        <h2><a href="/focus_post?id={{post.id}}">{{post.title}}</a></h2>
-        <br>
+        <h2 class="ml-4"><a href="/focus_post?id={{post.id}}" id="post_sub_t">{{post.title}}</a></h2>
+        
 
-        <p>{{post.body}}</p>
+        <p id="post_body" class="ml-5">{{post.body}}</p>
         <br>
-        <p>Posted by <a href="/profile_select?id={{post.owner_id}}">{{post.owner.name}}</a></p>
+        <!-- <p>Posted by <a href="/profile_select?id={{post.owner_id}}" style="color: black;">{{post.owner.name}}</a></p> -->
         <hr>
     </form>
     <br>
     <br>
+</div>
+</div>
+</div>
     {% endfor%}
 
-
+<footer style="font-size: 16px; background-color: rgb(160, 159, 159); color: #000;">Created by Micih Hines. Email: micih.hines@gmail.com</footer>
 {% endblock %}

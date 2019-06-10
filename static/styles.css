@@ -1,0 +1,126 @@
+html, body{
+width: 100%;
+overflow: 0;
+}
+
+
+.menu_link{
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 100px 0 0 0;
+
+}
+
+.photo{
+    border: 5px solid rebeccapurple;
+}
+
+.menu_link:hover{
+    color: gray;
+    text-decoration: none;
+
+}
+
+
+  
+  .image {
+    height:500px; 
+    width: cover;
+    opacity: 0.4;
+    
+   
+  }
+  
+  
+.overlay {
+    background: #646a72;
+    
+   
+  }
+
+  .top_title{
+    color: aqua;
+    
+
+  }
+
+  .top_p{
+      
+}
+
+#post_title{
+  text-align: center;
+}
+
+#post_sub_t {
+  color: red; 
+  font-size: 22pt;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#post_body{
+  font-size: 12pt;
+}
+
+#b_button{
+  
+  border-radius: 100%;
+  margin-left: 1%
+
+}
+
+ #r_pic{
+  float: right; 
+  width: 40%; 
+  height: 80%; 
+  border-color: red;
+  border: 2px solid red;
+  border-radius: 10%
+} 
+
+#imageContainer{
+  width:400px; 
+  height:350px; 
+  background-image: url("../static/writing_pic_2.jpg");
+  border-color: red;
+  border: 2px solid red;
+  border-radius: 10%;
+  text-align: center;
+  float: right;
+  color: white;
+}
+
+#l_pic{
+  float: right; 
+  width: 30%; 
+  height: 25%; 
+  margin-right: 5%;
+  border-color: red;
+  border: 2px solid red;
+  border-radius: 10%
+}
+
+#fix_footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  font-size: 12px;
+  background-color: #646a72;
+}
+
+#main_pic{
+  height: 70%;
+  width: 70%;
+ float: right;
+}
+
+#profiles{
+  width: 120px;
+  text-align: center;
+  padding: 5px;
+  border-right: 1px solid rgb(160, 159, 159);
+  font-size: 20pt;
+}

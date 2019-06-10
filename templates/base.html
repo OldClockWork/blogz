@@ -5,27 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link href="../static/styles.css" type="text/css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Blogz</title>
+
 </head>
 <body>
+    <div class="mb-2" style="background-color: black;">
     
-    <a href="/">Home</a> | 
+    <div class="ml-5">
+    <a class="menu_link" href="/">Home</a>  
     {% if 'user' in session %}
-            <a href="/create_post">New Post</a>
+            <a class="menu_link" href="/create_post" style="margin: 3%">New Post</a>
+            <div class="mr-5">
             <form action="/logout" method="post" id='logout' style="float: right;">
-              {{ session['user'] }} <!-- Displays the user's name/alias -->
+              <!-- {{ session['user'] }} Displays the user's name/alias -->
               <br>
-              <input type="submit" value="Logout" />
+              <input type="submit" value="Logout" class="btn" style="background-color: white; border-radius: 100%;" />
+            </div>
             </form>
         {% else %}
-             <a href="/login">Login</a> | <a href="/register">Register</a>
+             <a class="menu_link" href="/login" style="margin: 3%">Login</a>  
+             <a class="menu_link" href="/register">Register</a>
         {% endif %}
+    </div>
         <br>
         <br>
         <br>
+    </div>
 
+    
     {% block content %}
 
+    
     {% endblock %}
+     
 </body>
+
 </html>

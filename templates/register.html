@@ -2,32 +2,48 @@
 
 
 {% block content %}
+
+        <h1 style="text-align: center;">Register</h1>
+        
+        <div class="container">
+                <div class="row">
+                        <div class="col-12">
+        <img class="img-fluid" src="../static/writing_pic_2.jpg" id="r_pic"/>
+        
+        
         {{error}}
+        <br>
         <br>
     <form action="regConfirm" method="POST">
         <label>
-            Name 
-            <input type="text" name="user_name" value="">
+            <strong>Name</strong>
+            <input class="form-control"  type="text" name="user_name" value="">
         </label>
         <br>
 
         <label>
-            Email
-            <input type="text" name="email" value="">
+            <strong>Email</strong>
+            <input class="form-control"  type="text" name="email" value="">
         </label>
         <br>
 
         <label>
-            Password
-            <input type="password" name="password" value="">
+            <strong>Password</strong>
+            <input class="form-control"  type="password" name="password" value="">
         </label>
         <br>
 
         <label>
-            Re-enter Password
-            <input type="password" name="re-password" value="">
+            <strong>Re-enter Password</strong>
+            <input class="form-control" type="password" name="re-password" value="">
         </label>
         <br>
-        <input type="submit" value="Register">
+        <input type="submit" value="Register" class="btn btn-danger" id="b_button">
+        
+        
     </form>
+        </div>
+    </div>
+</div>
+    <footer id="fix_footer" style="font-size: 16px; background-color: rgb(160, 159, 159); color: #000;">Created by Micih Hines. Email: micih.hines@gmail.com</footer>
 {% endblock %}
